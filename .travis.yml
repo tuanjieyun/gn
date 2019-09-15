@@ -1,0 +1,8 @@
+os: windows
+language: cpp
+jobs:
+  include:
+    - stage: "Compile"
+      name: "Compile V8"
+      script:
+        - ./bootstrap/bootstrap.py --skip-generate-buildfiles
