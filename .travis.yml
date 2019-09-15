@@ -5,4 +5,5 @@ jobs:
     - stage: "Compile"
       name: "Compile GN"
       script:
-        - python bootstrap/bootstrap.py --skip-generate-buildfiles
+        - python build/gen.py
+        - ninja -C out
