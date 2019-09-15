@@ -3,6 +3,6 @@ language: cpp
 jobs:
   include:
     - stage: "Compile"
-      name: "Compile V8"
+      name: "Compile GN"
       script:
-        - ./bootstrap/bootstrap.py --skip-generate-buildfiles
+        - python bootstrap/bootstrap.py --skip-generate-buildfiles
